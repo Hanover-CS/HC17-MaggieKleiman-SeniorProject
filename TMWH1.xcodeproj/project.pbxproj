@@ -12,6 +12,7 @@
 		0C5F08901DBD798100C8E7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5F088E1DBD798100C8E7B4 /* Main.storyboard */; };
 		0C5F08921DBD798100C8E7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5F08911DBD798100C8E7B4 /* Assets.xcassets */; };
 		0C5F08951DBD798100C8E7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5F08931DBD798100C8E7B4 /* LaunchScreen.storyboard */; };
+		0C5F089D1DBD87B500C8E7B4 /* Broadway FountainTALarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5F089C1DBD87B500C8E7B4 /* Broadway FountainTALarge.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0C5F08911DBD798100C8E7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C5F08941DBD798100C8E7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5F08961DBD798100C8E7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C5F089C1DBD87B500C8E7B4 /* Broadway FountainTALarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Broadway FountainTALarge.jpg"; path = "../../../Desktop/Broadway FountainTALarge.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				0C5F088A1DBD798100C8E7B4 /* AppDelegate.swift */,
 				0C5F088C1DBD798100C8E7B4 /* ViewController.swift */,
 				0C5F088E1DBD798100C8E7B4 /* Main.storyboard */,
+				0C5F089C1DBD87B500C8E7B4 /* Broadway FountainTALarge.jpg */,
 				0C5F08911DBD798100C8E7B4 /* Assets.xcassets */,
 				0C5F08931DBD798100C8E7B4 /* LaunchScreen.storyboard */,
 				0C5F08961DBD798100C8E7B4 /* Info.plist */,
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5F089D1DBD87B500C8E7B4 /* Broadway FountainTALarge.jpg in Resources */,
 				0C5F08951DBD798100C8E7B4 /* LaunchScreen.storyboard in Resources */,
 				0C5F08921DBD798100C8E7B4 /* Assets.xcassets in Resources */,
 				0C5F08901DBD798100C8E7B4 /* Main.storyboard in Resources */,
