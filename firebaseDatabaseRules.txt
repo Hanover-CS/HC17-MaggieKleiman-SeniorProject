@@ -1,0 +1,23 @@
+firebaseDatabaseRules.txt
+
+
+/*{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}*/
+
+{
+  "rules": {
+    //lets any person read the database
+    ".read": "auth == null",
+    "users": {
+      "$id": {
+        // grants write access to the owner of this user account
+        // whose uid must exactly match the key ($user_id)
+        ".write": "$id === auth.uid"
+      }
+    }
+  }
+}
