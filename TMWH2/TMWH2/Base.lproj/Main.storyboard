@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93977012434554974" green="0.92021757003016813" blue="0.71790325428845703" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fc1-Z2-VuC" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="201" id="8Hq-qd-xnX"/>
                             <constraint firstItem="YMf-Aa-8So" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Oqh-9z-Xqn"/>
@@ -77,13 +77,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq7-zP-6FO">
-                                <rect key="frame" x="125" y="288" width="124" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Madison Watering Hole" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1V-IU-c9X">
                                 <rect key="frame" x="15" y="28" width="290" height="31"/>
                                 <constraints>
@@ -101,24 +94,57 @@
                                     <constraint firstAttribute="height" constant="204" id="q1S-81-wBg"/>
                                 </constraints>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq7-zP-6FO">
+                                <rect key="frame" x="139" y="232" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epy-bW-EMT">
+                                <rect key="frame" x="29" y="274" width="262" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="UG7-4z-O3U"/>
+                                    <constraint firstAttribute="height" constant="21" id="XXS-Vs-f1K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Special" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIo-UT-Adb">
+                                <rect key="frame" x="29" y="315" width="262" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="6RZ-cx-vfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a1V-IU-c9X" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="1lk-sy-xo7"/>
                             <constraint firstItem="Wed-HE-DsY" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-162" id="AAm-Ea-VMd"/>
+                            <constraint firstItem="epy-bW-EMT" firstAttribute="top" secondItem="zq7-zP-6FO" secondAttribute="bottom" constant="21" id="Ba6-re-EWm"/>
                             <constraint firstItem="a1V-IU-c9X" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-240.5" id="Sif-XQ-hIz"/>
+                            <constraint firstItem="kIo-UT-Adb" firstAttribute="top" secondItem="epy-bW-EMT" secondAttribute="bottom" constant="20" id="aMI-Qc-Hrs"/>
+                            <constraint firstItem="zq7-zP-6FO" firstAttribute="top" secondItem="Wed-HE-DsY" secondAttribute="bottom" constant="8" id="ajz-xv-qN0"/>
                             <constraint firstItem="Wed-HE-DsY" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="eGs-Xg-axX"/>
+                            <constraint firstItem="zq7-zP-6FO" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="l1P-Eb-bI1"/>
+                            <constraint firstItem="epy-bW-EMT" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="nsK-Wb-jyg"/>
+                            <constraint firstItem="kIo-UT-Adb" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tRi-MW-8EM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Specials" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="myLabel" destination="zq7-zP-6FO" id="yJE-Da-QT5"/>
                         <outlet property="myPicker" destination="Wed-HE-DsY" id="Blu-kG-h3O"/>
+                        <outlet property="storeName" destination="epy-bW-EMT" id="ye4-UZ-epX"/>
+                        <outlet property="storeSpecials" destination="kIo-UT-Adb" id="3Qx-oY-NS8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="748.125" y="359.15492957746477"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="d5T-x7-wAi">
@@ -194,7 +220,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.57321352845035478" blue="0.17091030003143337" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XcD-0h-KSc" firstAttribute="width" secondItem="usg-H3-Oqz" secondAttribute="width" id="3dk-6X-56z"/>
                             <constraint firstItem="g2U-fh-CxI" firstAttribute="centerX" secondItem="HTp-mh-Acc" secondAttribute="centerX" id="7nl-5e-ljA"/>

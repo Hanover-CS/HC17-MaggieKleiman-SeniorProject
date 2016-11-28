@@ -7,21 +7,19 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>279870114536-ou1pl1lvlh3q18e6qnm19e0lubka7nor.apps.googleusercontent.com</string>
+	<string>56292133444-3mfgbuhijvtd4nu58mrrgk3elmfsniou.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.279870114536-ou1pl1lvlh3q18e6qnm19e0lubka7nor</string>
-	<key>API_KEY</key>
-	<string>AIzaSyDHEBfxOnlszoPyoFeuE6qExIqM6WMe2Jc</string>
+	<string>com.googleusercontent.apps.56292133444-3mfgbuhijvtd4nu58mrrgk3elmfsniou</string>
 	<key>GCM_SENDER_ID</key>
-	<string>279870114536</string>
+	<string>56292133444</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.MargaretKleiman.chachat</string>
+	<string>com.MargaretKleiman.TMWH2</string>
 	<key>PROJECT_ID</key>
-	<string>chachat-39e25</string>
+	<string>tmwh2-9a393</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chachat-39e25.appspot.com</string>
+	<string>tmwh2-9a393.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:279870114536:ios:1ba5e28755de8257</string>
+	<string>1:56292133444:ios:f3a8eebb609e8ab2</string>
 	<key>DATABASE_URL</key>
-	<string>https://chachat-39e25.firebaseio.com</string>
+	<string>https://tmwh2-9a393.firebaseio.com</string>
 </dict>
 </plist>

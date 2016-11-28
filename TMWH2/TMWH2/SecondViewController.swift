@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var storeSpecials: UILabel!
+    @IBOutlet weak var storeName: UILabel!
     
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +25,14 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         myPicker.dataSource = self
         myPicker.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     //MARK: - Delegates and data sources
     //**********************************
@@ -56,6 +62,25 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         pickerLabel.textAlignment = .center
         return pickerLabel
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let dayOfWeek: String = myLabel.text!
+        let dbref = FIRDatabase.database().reference()
+        let ref = dbref.child("stores").child("7")
+        ref.observeSingleEvent(of: .value, with:
+        { (snapshot : FIRDataSnapshot) in
+            let snapshotValue = snapshot.value as? NSDictionary
+            self.storeName.text = snapshotValue?["name"] as? String
+            //self.storeSpecials.text = snapshotValue?["days/monday"] as? String
+        })
+        let dayRef = dbref.child("stores").child("7").child("days")
+        dayRef.observeSingleEvent(of: .value, with:
+            { (snapshot : FIRDataSnapshot) in
+                let snapshotValue = snapshot.value as? NSDictionary
+                //self.storeName.text = snapshotValue?["name"] as? String
+                self.storeSpecials.text = snapshotValue?["monday"] as? String
+        })
+        
+    }
 }
 

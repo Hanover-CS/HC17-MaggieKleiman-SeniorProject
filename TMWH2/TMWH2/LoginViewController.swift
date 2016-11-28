@@ -35,19 +35,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginClicked(_ sender: Any) {
-        if ((emailTextField.text?.characters.count)! < 5)
-        {
-            emailTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
-            return
-        } else {
-            emailTextField.backgroundColor = UIColor.white
-        }
-        if ((passwordTextField.text?.characters.count)! < 5)
-        {
-            passwordTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
-            return
-        } else {
-            passwordTextField.backgroundColor = UIColor.white
+        
+        if (!CheckInput()) {
+            return 
         }
         
         let email = emailTextField.text
@@ -61,6 +51,25 @@ class LoginViewController: UIViewController {
             }
             print("signed in!")
         })
+    }
+    
+    func CheckInput () -> Bool {
+        if ((emailTextField.text?.characters.count)! < 5)
+        {
+            emailTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
+            return false
+        } else {
+            emailTextField.backgroundColor = UIColor.white
+        }
+        if ((passwordTextField.text?.characters.count)! < 5)
+        {
+            passwordTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
+            return false
+        } else {
+            passwordTextField.backgroundColor = UIColor.white
+        }
+        return true
+
     }
 
     /*
