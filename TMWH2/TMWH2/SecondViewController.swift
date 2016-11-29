@@ -13,8 +13,15 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var storeSpecials: UILabel!
-    @IBOutlet weak var storeName: UILabel!
+    
+    @IBOutlet weak var redPepperoni: UILabel!
+    @IBOutlet weak var redPepperoniSpecial: UILabel!
+    
+    @IBOutlet weak var redPepper: UILabel!
+    @IBOutlet weak var redPepperSpecial: UILabel!
+    
+    @IBOutlet weak var redRoaster: UILabel!
+    @IBOutlet weak var redRoasterSpecial: UILabel!
     
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
@@ -26,6 +33,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         myPicker.dataSource = self
         myPicker.delegate = self
         
+        myLabel.text = "Sunday"
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,24 +71,95 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return pickerLabel
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let dayOfWeek: String = myLabel.text!
+    
+    func populateSpecials(store: String, storeLabel: UILabel) {
+        let dayOfWeek: String = self.myLabel.text!
+        
         let dbref = FIRDatabase.database().reference()
-        let ref = dbref.child("stores").child("7")
+        
+        switch dayOfWeek {
+        case "Sunday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["sunday"] as? String
+            })
+        case "Monday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["monday"] as? String
+            })
+        case "Tuesday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["tuesday"] as? String
+            })
+        case "Wednesday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["wednesday"] as? String
+            })
+        case "Thursday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["thursday"] as? String
+            })
+        case "Friday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["friday"] as? String
+            })
+        case "Saturday":
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["saturday"] as? String
+            })
+        default:
+            let dayRef = dbref.child("stores").child(store).child("days")
+            dayRef.observeSingleEvent(of: .value, with:
+                { (snapshot : FIRDataSnapshot) in
+                    let snapshotValue = snapshot.value as? NSDictionary
+                    storeLabel.text = snapshotValue?["sunday"] as? String
+            })
+        }
+    }
+    
+    func populateName(store: String, storeLabel: UILabel) {
+        let dbref = FIRDatabase.database().reference()
+        let ref = dbref.child("stores").child(store)
         ref.observeSingleEvent(of: .value, with:
-        { (snapshot : FIRDataSnapshot) in
-            let snapshotValue = snapshot.value as? NSDictionary
-            self.storeName.text = snapshotValue?["name"] as? String
-            //self.storeSpecials.text = snapshotValue?["days/monday"] as? String
-        })
-        let dayRef = dbref.child("stores").child("7").child("days")
-        dayRef.observeSingleEvent(of: .value, with:
             { (snapshot : FIRDataSnapshot) in
                 let snapshotValue = snapshot.value as? NSDictionary
-                //self.storeName.text = snapshotValue?["name"] as? String
-                self.storeSpecials.text = snapshotValue?["monday"] as? String
+                storeLabel.text = snapshotValue?["name"] as? String
         })
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        populateName(store: "0", storeLabel: redPepperoni)
+        populateSpecials(store: "0", storeLabel: redPepperoniSpecial)
+        
+        populateName(store: "1", storeLabel: redPepper)
+        populateSpecials(store: "1", storeLabel: redPepperSpecial)
+        
+        populateName(store: "2", storeLabel: redRoaster)
+        populateSpecials(store: "2", storeLabel: redRoasterSpecial)
         
     }
+    
 }
 

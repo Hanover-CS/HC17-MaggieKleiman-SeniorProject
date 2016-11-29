@@ -16,8 +16,8 @@
 		0C5DDF411DD96B4900B1064C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5DDF401DD96B4900B1064C /* ThirdViewController.swift */; };
 		0C6E77801DD98324006CF1FF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E777F1DD98324006CF1FF /* Utilities.swift */; };
 		0C7332521DDA8ADD00688D07 /* Broadway FountainTALarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C7332511DDA8ADD00688D07 /* Broadway FountainTALarge.jpg */; };
+		0CA75C9E1DED0D9C009B5CDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA75C9D1DED0D9C009B5CDF /* GoogleService-Info.plist */; };
 		0CC22D8E1DE385A900E9A8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AFBD61DD8BE61008A99A9 /* Main.storyboard */; };
-		0CC22D941DE38FB000E9A8CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC22D931DE38FB000E9A8CB /* GoogleService-Info.plist */; };
 		45D63CDEB1029474E297CB71 /* Pods_TMWH2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F713D5B7684F262F043EC /* Pods_TMWH2.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		0C5DDF401DD96B4900B1064C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		0C6E777F1DD98324006CF1FF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0C7332511DDA8ADD00688D07 /* Broadway FountainTALarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broadway FountainTALarge.jpg"; sourceTree = "<group>"; };
-		0CC22D931DE38FB000E9A8CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CA75C9D1DED0D9C009B5CDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		343914BF7DE9D2F5A150C9A2 /* Pods-TMWH2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMWH2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMWH2/Pods-TMWH2.debug.xcconfig"; sourceTree = "<group>"; };
 		65984BBF67D84E9D5F6B1308 /* Pods-TMWH2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMWH2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMWH2/Pods-TMWH2.release.xcconfig"; sourceTree = "<group>"; };
 		DA6F713D5B7684F262F043EC /* Pods_TMWH2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMWH2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +78,8 @@
 				0C1AFBD21DD8BE61008A99A9 /* FirstViewController.swift */,
 				0C1AFBD41DD8BE61008A99A9 /* SecondViewController.swift */,
 				0C1AFBD61DD8BE61008A99A9 /* Main.storyboard */,
-				0CC22D931DE38FB000E9A8CB /* GoogleService-Info.plist */,
 				0C1AFBD91DD8BE63008A99A9 /* Assets.xcassets */,
+				0CA75C9D1DED0D9C009B5CDF /* GoogleService-Info.plist */,
 				0C1AFBDB1DD8BE63008A99A9 /* LaunchScreen.storyboard */,
 				0C1AFBDE1DD8BE63008A99A9 /* Info.plist */,
 				0C5DDF3C1DD9603A00B1064C /* LoginViewController.swift */,
@@ -169,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC22D941DE38FB000E9A8CB /* GoogleService-Info.plist in Resources */,
 				0C1AFBDD1DD8BE63008A99A9 /* LaunchScreen.storyboard in Resources */,
 				0CC22D8E1DE385A900E9A8CB /* Main.storyboard in Resources */,
+				0CA75C9E1DED0D9C009B5CDF /* GoogleService-Info.plist in Resources */,
 				0C7332521DDA8ADD00688D07 /* Broadway FountainTALarge.jpg in Resources */,
 				0C1AFBDA1DD8BE63008A99A9 /* Assets.xcassets in Resources */,
 			);
@@ -281,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -331,6 +332,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

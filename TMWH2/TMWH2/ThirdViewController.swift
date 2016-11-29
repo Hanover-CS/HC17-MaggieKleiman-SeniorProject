@@ -13,6 +13,8 @@ import FirebaseAuth
 class ThirdViewController: UIViewController {
     
     
+    @IBOutlet weak var testLabel: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
@@ -33,6 +35,7 @@ class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }

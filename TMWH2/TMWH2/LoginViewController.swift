@@ -11,7 +11,9 @@ import Firebase
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
+    
 
+    // MARK: Outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -34,7 +36,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loginClicked(_ sender: Any) {
+    @IBAction func loginClicked(_ sender: AnyObject) {
         
         if (!CheckInput()) {
             return 
@@ -51,6 +53,8 @@ class LoginViewController: UIViewController {
             }
             print("signed in!")
         })
+        
+        
     }
     
     func CheckInput () -> Bool {
