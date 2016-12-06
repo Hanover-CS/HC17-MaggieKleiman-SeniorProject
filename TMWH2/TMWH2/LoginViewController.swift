@@ -52,8 +52,6 @@ class LoginViewController: UIViewController {
                 return
             }
             print("signed in!")
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "thirdViewController")
-            self.navigationController?.present(vc!, animated: true, completion: nil)
         })
         
         
@@ -82,7 +80,7 @@ class LoginViewController: UIViewController {
         
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -90,6 +88,5 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
