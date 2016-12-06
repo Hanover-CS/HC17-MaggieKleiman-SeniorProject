@@ -17,14 +17,6 @@ class ThirdViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        //logout
-        let firebaseAuth = FIRAuth.auth()
-        do {
-            try firebaseAuth?.signOut()
-        } catch let signOutError as NSError {
-            print("error signing out")
-        }
 
         if (FIRAuth.auth()?.currentUser == nil) {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "firebaseLoginViewController")
@@ -32,6 +24,15 @@ class ThirdViewController: UIViewController {
         }
     }
 
+    @IBAction func logoutClicked(_ sender: Any) {
+        //logout
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print("error signing out")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

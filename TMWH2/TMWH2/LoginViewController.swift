@@ -52,6 +52,8 @@ class LoginViewController: UIViewController {
                 return
             }
             print("signed in!")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "thirdViewController")
+            self.navigationController?.present(vc!, animated: true, completion: nil)
         })
         
         
@@ -74,6 +76,10 @@ class LoginViewController: UIViewController {
         }
         return true
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
 
     /*

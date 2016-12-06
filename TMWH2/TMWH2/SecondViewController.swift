@@ -23,6 +23,24 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var redRoaster: UILabel!
     @IBOutlet weak var redRoasterSpecial: UILabel!
     
+    @IBOutlet weak var jendys: UILabel!
+    @IBOutlet weak var jendysSpecial: UILabel!
+    
+    @IBOutlet weak var shooters: UILabel!
+    @IBOutlet weak var shootersSpecial: UILabel!
+
+    @IBOutlet weak var downtowner: UILabel!
+    @IBOutlet weak var downtownerSpecial: UILabel!
+    
+    @IBOutlet weak var attic: UILabel!
+    @IBOutlet weak var atticSpecial: UILabel!
+    
+    @IBOutlet weak var taproom: UILabel!
+    @IBOutlet weak var taproomSpecial: UILabel!
+    
+    @IBOutlet weak var shipleys: UILabel!
+    @IBOutlet weak var shipleysSpecial: UILabel!
+    
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
     
@@ -158,6 +176,24 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         populateName(store: "2", storeLabel: redRoaster)
         populateSpecials(store: "2", storeLabel: redRoasterSpecial)
+        
+        populateName(store: "3", storeLabel: jendys)
+        populateSpecials(store: "3", storeLabel: jendysSpecial)
+        
+        populateName(store: "4", storeLabel: shooters)
+        populateSpecials(store: "4", storeLabel: shootersSpecial)
+        
+        populateName(store: "5", storeLabel: downtowner)
+        populateSpecials(store: "5", storeLabel: downtownerSpecial)
+        
+        populateName(store: "6", storeLabel: attic)
+        populateSpecials(store: "6", storeLabel: atticSpecial)
+        
+        populateName(store: "7", storeLabel: taproom)
+        populateSpecials(store: "7", storeLabel: taproomSpecial)
+        
+        populateName(store: "8", storeLabel: shipleys)
+        populateSpecials(store: "8", storeLabel: shipleysSpecial)
         
     }
     
