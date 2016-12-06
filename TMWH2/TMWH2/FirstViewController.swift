@@ -14,6 +14,10 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        navigationItem.title = nil
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

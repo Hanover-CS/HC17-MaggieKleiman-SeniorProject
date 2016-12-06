@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeScreen" id="9pv-A4-QxB" customClass="FirstViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -60,6 +60,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="9gw-bM-q37"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +69,7 @@
         <!--Specials-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="specialsScreen" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -267,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="358.4707646176912"/>
         </scene>
-        <!--Third View Controller-->
+        <!--UserAccount-->
         <scene sceneID="d5T-x7-wAi">
             <objects>
-                <viewController storyboardIdentifier="thirdViewController" id="9Zn-bG-BU5" customClass="ThirdViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userAccount" id="9Zn-bG-BU5" customClass="ThirdViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8uv-xf-CRf"/>
                         <viewControllerLayoutGuide type="bottom" id="Yv9-C8-OsH"/>
@@ -288,10 +289,29 @@
                                     <action selector="logoutClicked:" destination="9Zn-bG-BU5" eventType="touchUpInside" id="3a9-Q4-ucb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="339-vg-H6N">
+                                <rect key="frame" x="16" y="88" width="96" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="navHome:" destination="9Zn-bG-BU5" eventType="touchUpInside" id="l4U-cI-QSi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lr-kG-wmu">
+                                <rect key="frame" x="273" y="79" width="67" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Specials "/>
+                                <connections>
+                                    <action selector="navSpecials:" destination="9Zn-bG-BU5" eventType="touchUpInside" id="1YU-9v-Oya"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IQw-kQ-qQR"/>
+                    <tabBarItem key="tabBarItem" title="Login" image="second" id="n6t-gG-KVf"/>
+                    <navigationItem key="navigationItem" title="UserAccount" id="IQw-kQ-qQR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="eAc-VI-GwW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kN5-lv-gzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,7 +320,7 @@
         <!--Login View Controller-->
         <scene sceneID="xMi-dQ-PTJ">
             <objects>
-                <viewController storyboardIdentifier="firebaseLoginViewController" id="dkT-22-3zl" customClass="LoginViewController" customModule="TMWH2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firebaseLoginViewController" id="dkT-22-3zl" customClass="LoginViewController" customModule="TMWH2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z2r-YU-Aib"/>
                         <viewControllerLayoutGuide type="bottom" id="Zra-di-dcl"/>
@@ -380,6 +400,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="L9w-Ci-9yF"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -396,12 +417,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Login-->
         <scene sceneID="FYB-tI-b4b">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XuD-2b-MRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="knM-X5-9oF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="YKy-Kg-Wgf"/>
+                    <tabBarItem key="tabBarItem" title="Login" image="second" id="YKy-Kg-Wgf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E23-NU-hVj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -412,6 +432,7 @@
                         <segue destination="9Zn-bG-BU5" kind="relationship" relationship="rootViewController" id="E3O-Jx-pec"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XuD-2b-MRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="792"/>
         </scene>

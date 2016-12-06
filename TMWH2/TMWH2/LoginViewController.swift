@@ -52,10 +52,15 @@ class LoginViewController: UIViewController {
                 return
             }
             print("signed in!")
+            self.onClickLogin()
         })
-        
-        
     }
+    
+    func onClickLogin() {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "userAccount"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     func CheckInput () -> Bool {
         if ((emailTextField.text?.characters.count)! < 5)
@@ -76,9 +81,6 @@ class LoginViewController: UIViewController {
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
 
     
     // MARK: - Navigation

@@ -24,6 +24,17 @@ class ThirdViewController: UIViewController {
         }
     }
 
+    
+    @IBAction func navSpecials(_ sender: Any) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "specialsScreen"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func navHome(_ sender: Any) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "homeScreen"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     @IBAction func logoutClicked(_ sender: Any) {
         //logout
         let firebaseAuth = FIRAuth.auth()
