@@ -197,10 +197,5 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
     }
     
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        navigationItem.title = nil
-    }
-
-    
 }
 

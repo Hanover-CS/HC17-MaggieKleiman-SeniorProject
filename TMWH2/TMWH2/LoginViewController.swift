@@ -57,10 +57,23 @@ class LoginViewController: UIViewController {
     }
     
     func onClickLogin() {
-        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "userAccount"))! as UIViewController
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func forgotClicked(_ sender: AnyObject) {
+        if (!emailTextField.text!.isEmpty) {
+            let email = self.emailTextField.text
+            
+            FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: { (error) in
+                if let error = error {
+                    Utilities().ShowAlert(title: "Error", message: error.localizedDescription, vc: self)
+                    return
+                }
+                Utilities().ShowAlert(title: "Success!", message: "Please check your email!", vc: self)
+            })
+        }
+    }
     
     func CheckInput () -> Bool {
         if ((emailTextField.text?.characters.count)! < 5)

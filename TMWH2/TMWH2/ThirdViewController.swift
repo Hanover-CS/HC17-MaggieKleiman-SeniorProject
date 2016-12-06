@@ -23,17 +23,6 @@ class ThirdViewController: UIViewController {
             self.navigationController?.present(vc!, animated: true, completion: nil)
         }
     }
-
-    
-    @IBAction func navSpecials(_ sender: Any) {
-        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "specialsScreen"))! as UIViewController
-        self.present(vc, animated: true, completion: nil)
-    }
-    
-    @IBAction func navHome(_ sender: Any) {
-        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "homeScreen"))! as UIViewController
-        self.present(vc, animated: true, completion: nil)
-    }
     
     @IBAction func logoutClicked(_ sender: Any) {
         //logout
@@ -43,12 +32,18 @@ class ThirdViewController: UIViewController {
         } catch let signOutError as NSError {
             print("error signing out")
         }
+        
+        //Revert back to home screen on logout
+        self.onLogoutClicked()
+    }
+    
+    func onLogoutClicked() {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         // Do any additional setup after loading the view.
     }
 

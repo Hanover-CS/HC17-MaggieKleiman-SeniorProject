@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++99E5720",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++3AB7B0D" : 9223372036854775807,
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++110E95A" : 9223372036854775807,
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++99E5720" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8EF0B6C3-483E-4BAD-B267-7A2EFB05060D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++3AB7B0D" : "",
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++110E95A" : "",
+    "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++99E5720" : "TMWH1\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TMWH2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TMWH2\/TMWH2.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kleimanm17\/hc07-WateringHole",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++110E95A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kleimanm17\/hc07-WateringHole.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++3AB7B0D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kleimanm17\/hc07-WateringHole",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C75272A954AE8F2023EA826D9DD9D6D17108F66+++99E5720"
+    }
+  ]
+}
