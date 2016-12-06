@@ -8,6 +8,7 @@ firebaseDatabaseRules.txt
   }
 }*/
 
+/*
 {
   "rules": {
     //lets any person read the database
@@ -17,6 +18,20 @@ firebaseDatabaseRules.txt
         // grants write access to the owner of this user account
         // whose uid must exactly match the key ($user_id)
         ".write": "$id === auth.uid"
+      }
+    }
+  }
+}*/
+
+{
+  "rules": {
+    "stores": {".read": "auth == null || auth != null",
+      "users": {
+        "$id": {
+          // grants write access to the owner of this user account
+          // whose uid must exactly match the key ($id)
+          ".write": "$id == auth.uid"
+        }
       }
     }
   }
