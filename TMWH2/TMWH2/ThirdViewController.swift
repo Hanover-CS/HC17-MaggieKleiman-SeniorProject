@@ -15,6 +15,8 @@ class ThirdViewController: UIViewController {
     
     @IBOutlet weak var testLabel: UILabel!
     
+    @IBOutlet weak var merchantName: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
@@ -22,6 +24,18 @@ class ThirdViewController: UIViewController {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "firebaseLoginViewController")
             self.navigationController?.present(vc!, animated: true, completion: nil)
         }
+    }
+    
+    func populateName() {
+        let name = FIRAuth.auth()?.currentUser?.uid
+        merchantName.text = name
+        let dbref = FIRDatabase.database().reference()
+        let ref = dbref.child("stores").child(name!)
+        ref.observeSingleEvent(of: .value, with:
+            { (snapshot : FIRDataSnapshot) in
+                let snapshotValue = snapshot.value as? NSDictionary
+                self.merchantName.text = snapshotValue?["name"] as? String
+        })
     }
     
     @IBAction func logoutClicked(_ sender: Any) {
@@ -35,6 +49,10 @@ class ThirdViewController: UIViewController {
         
         //Revert back to home screen on logout
         self.onLogoutClicked()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        populateName()
     }
     
     func onLogoutClicked() {

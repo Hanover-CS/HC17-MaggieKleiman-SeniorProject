@@ -168,32 +168,32 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     override func viewDidAppear(_ animated: Bool) {
         
-        populateName(store: "0", storeLabel: redPepperoni)
-        populateSpecials(store: "0", storeLabel: redPepperoniSpecial)
+        populateName(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoni)
+        populateSpecials(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoniSpecial)
         
-        populateName(store: "1", storeLabel: redPepper)
-        populateSpecials(store: "1", storeLabel: redPepperSpecial)
+        populateName(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepper)
+        populateSpecials(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepperSpecial)
         
-        populateName(store: "2", storeLabel: redRoaster)
-        populateSpecials(store: "2", storeLabel: redRoasterSpecial)
+        populateName(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoaster)
+        populateSpecials(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
         
-        populateName(store: "3", storeLabel: jendys)
-        populateSpecials(store: "3", storeLabel: jendysSpecial)
+        populateName(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendys)
+        populateSpecials(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendysSpecial)
         
-        populateName(store: "4", storeLabel: shooters)
-        populateSpecials(store: "4", storeLabel: shootersSpecial)
+        populateName(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shooters)
+        populateSpecials(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
         
-        populateName(store: "5", storeLabel: downtowner)
-        populateSpecials(store: "5", storeLabel: downtownerSpecial)
+        populateName(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtowner)
+        populateSpecials(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtownerSpecial)
         
-        populateName(store: "6", storeLabel: attic)
-        populateSpecials(store: "6", storeLabel: atticSpecial)
+        populateName(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: attic)
+        populateSpecials(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: atticSpecial)
         
-        populateName(store: "7", storeLabel: taproom)
-        populateSpecials(store: "7", storeLabel: taproomSpecial)
+        populateName(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproom)
+        populateSpecials(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproomSpecial)
         
-        populateName(store: "8", storeLabel: shipleys)
-        populateSpecials(store: "8", storeLabel: shipleysSpecial)
+        populateName(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleys)
+        populateSpecials(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleysSpecial)
         
     }
     
