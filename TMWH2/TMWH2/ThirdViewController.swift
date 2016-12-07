@@ -26,6 +26,7 @@ class ThirdViewController: UIViewController {
         }
     }
     
+    // populate label with name of merchant logged in 
     func populateName() {
         let name = FIRAuth.auth()?.currentUser?.uid
         merchantName.text = name
@@ -63,6 +64,16 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ThirdViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    // function to dismiss the keyboard
+    // with tap on screen after done entering text
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

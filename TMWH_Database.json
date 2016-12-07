@@ -1,6 +1,6 @@
 {
 	"stores": {
-		"0": {
+		"d0VHcDyzDjSzFv1MtdSDUFakoaq1": {
 			"id": "d0VHcDyzDjSzFv1MtdSDUFakoaq1",
 			"name": "The Red Pepperoni",
 			"contact_name": "Joe Somebody",
@@ -17,7 +17,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"1": {
+		"FWOjbbNYRmT78Y5SqhFLEiyV06G2": {
 			"id": "FWOjbbNYRmT78Y5SqhFLEiyV06G2",
 			"name": "The Red Pepper",
 			"contact_name": "Joe Somebody",
@@ -34,8 +34,8 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"2": {
-			"id": "CFh2lafUyb0x00liB6FZHvLbDs1",
+		"8CFh2lafUyb0x00liB6FZHvLbDs1": {
+			"id": "8CFh2lafUyb0x00liB6FZHvLbDs1",
 			"name": "The Red Roaster",
 			"contact_name": "Joe Somebody",
 			"contact_phone": "2163335660",
@@ -51,7 +51,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"3": {
+		"R7OUYuAkl9Xv5UDrrudKniDJIxD2": {
 			"id": "R7OUYuAkl9Xv5UDrrudKniDJIxD2",
 			"name": "Jendy's Pizzeria",
 			"contact_name": "Peter Other",
@@ -68,7 +68,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"4": {
+		"oWH6ecCfK8aUJAGBBt3zBCUabQl2": {
 			"id": "oWH6ecCfK8aUJAGBBt3zBCUabQl2",
 			"name": "Shooters",
 			"contact_name": "Mary Other",
@@ -85,7 +85,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"5": {
+		"QUzrBGxOakUDn25PwDoubxZFax03": {
 			"id": "QUzrBGxOakUDn25PwDoubxZFax03",
 			"name": "The Downtowner",
 			"contact_name": "Mary Doe",
@@ -102,7 +102,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"6": {
+		"dmj5b8ljkqZul3UgZ6fyHpYOfkc2": {
 			"id": "dmj5b8ljkqZul3UgZ6fyHpYOfkc2",
 			"name": "The Attic",
 			"contact_name": "Peter Doe",
@@ -119,7 +119,7 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"7": {
+		"WR4KxIszohOE1g7YKx8JFUL9XNh2": {
 			"id": "WR4KxIszohOE1g7YKx8JFUL9XNh2",
 			"name": "The Taproom",
 			"contact_name": "John Smith",
@@ -136,8 +136,8 @@
 				"sunday": "$2 well drinks"
 			}
 		},
-		"8": {
-			"id": "KzC5S18swhcjgzGPFu0yng1az9s1",
+		"xB41cKqDv9dZvYVxUwKPB34AgOI3": {
+			"id": "xB41cKqDv9dZvYVxUwKPB34AgOI3",
 			"name": "Shipley's",
 			"contact_name": "Sam Friend",
 			"contact_phone": "2163335660",
