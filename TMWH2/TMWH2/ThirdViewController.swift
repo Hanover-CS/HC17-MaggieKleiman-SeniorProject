@@ -17,6 +17,12 @@ class ThirdViewController: UIViewController {
     
     @IBOutlet weak var merchantName: UILabel!
     
+    @IBOutlet weak var monday: UITextView!
+    @IBOutlet weak var tuesday: UITextView!
+    @IBOutlet weak var wednesday: UITextView!
+    @IBOutlet weak var thursday: UITextView!
+    @IBOutlet weak var friday: UITextView!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
@@ -25,6 +31,15 @@ class ThirdViewController: UIViewController {
             self.navigationController?.present(vc!, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func updateClicked(_ sender: Any) {
+        let name = FIRAuth.auth()?.currentUser?.uid
+        let dbref = FIRDatabase.database().reference()
+        let ref = dbref.child("stores").child(name!).child("days").child("monday")
+        let mondayValue = monday.text as? NSString
+        ref.setValue(mondayValue)
+    }
+    
     
     // populate label with name of merchant logged in 
     func populateName() {

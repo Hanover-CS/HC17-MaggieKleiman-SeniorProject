@@ -370,6 +370,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateClicked:" destination="9Zn-bG-BU5" eventType="touchUpInside" id="Cpa-r4-JOl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -379,7 +382,12 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="eAc-VI-GwW"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="friday" destination="aVF-gE-PKJ" id="V5e-ht-pSa"/>
                         <outlet property="merchantName" destination="hNQ-gk-pkp" id="fhd-po-vZo"/>
+                        <outlet property="monday" destination="yOA-EQ-igP" id="Nq9-Xp-vhw"/>
+                        <outlet property="thursday" destination="tkt-Re-CNE" id="5u4-X6-7HS"/>
+                        <outlet property="tuesday" destination="N4U-fm-uqx" id="Qzz-Qy-q59"/>
+                        <outlet property="wednesday" destination="hTx-9o-Bln" id="9Dd-zI-zFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kN5-lv-gzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
