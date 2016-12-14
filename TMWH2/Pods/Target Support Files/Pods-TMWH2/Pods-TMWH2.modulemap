@@ -1,0 +1,6 @@
+framework module Pods_TMWH2 {
+  umbrella header "Pods-TMWH2-umbrella.h"
+
+  export *
+  module * { export * }
+}

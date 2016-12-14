@@ -1,0 +1,159 @@
+{
+	"stores": {
+		"d0VHcDyzDjSzFv1MtdSDUFakoaq1": {
+			"id": "d0VHcDyzDjSzFv1MtdSDUFakoaq1",
+			"name": "The Red Pepperoni",
+			"contact_name": "Joe Somebody",
+			"contact_phone": "2163335660",
+			"store_phone": "8122740111",
+			"address": "842 W Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"FWOjbbNYRmT78Y5SqhFLEiyV06G2": {
+			"id": "FWOjbbNYRmT78Y5SqhFLEiyV06G2",
+			"name": "The Red Pepper",
+			"contact_name": "Joe Somebody",
+			"contact_phone": "2163335660",
+			"store_phone": "8122653354",
+			"address": "902 W Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"8CFh2lafUyb0x00liB6FZHvLbDs1": {
+			"id": "8CFh2lafUyb0x00liB6FZHvLbDs1",
+			"name": "The Red Roaster",
+			"contact_name": "Joe Somebody",
+			"contact_phone": "2163335660",
+			"store_phone": "8122740762",
+			"address": "100 W Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"R7OUYuAkl9Xv5UDrrudKniDJIxD2": {
+			"id": "R7OUYuAkl9Xv5UDrrudKniDJIxD2",
+			"name": "Jendy's Pizzeria",
+			"contact_name": "Peter Other",
+			"contact_phone": "2163335660",
+			"store_phone": "8128668578",
+			"address": "239 W Lagrange Rd, Hanover, IN",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"oWH6ecCfK8aUJAGBBt3zBCUabQl2": {
+			"id": "oWH6ecCfK8aUJAGBBt3zBCUabQl2",
+			"name": "Shooters",
+			"contact_name": "Mary Other",
+			"contact_phone": "2163335660",
+			"store_phone": "8122653841",
+			"address": "101 E Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"QUzrBGxOakUDn25PwDoubxZFax03": {
+			"id": "QUzrBGxOakUDn25PwDoubxZFax03",
+			"name": "The Downtowner",
+			"contact_name": "Mary Doe",
+			"contact_phone": "2163335660",
+			"store_phone": "8122654343",
+			"address": "104 E Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"dmj5b8ljkqZul3UgZ6fyHpYOfkc2": {
+			"id": "dmj5b8ljkqZul3UgZ6fyHpYOfkc2",
+			"name": "The Attic",
+			"contact_name": "Peter Doe",
+			"contact_phone": "2163335660",
+			"store_phone": "8122655781",
+			"address": "1631 W. Main St. Madison, Indiana  47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"WR4KxIszohOE1g7YKx8JFUL9XNh2": {
+			"id": "WR4KxIszohOE1g7YKx8JFUL9XNh2",
+			"name": "The Taproom",
+			"contact_name": "John Smith",
+			"contact_phone": "2163335660",
+			"store_phone": "8122740216",
+			"address": "842 W Main St, Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		},
+		"xB41cKqDv9dZvYVxUwKPB34AgOI3": {
+			"id": "xB41cKqDv9dZvYVxUwKPB34AgOI3",
+			"name": "Shipley's",
+			"contact_name": "Sam Friend",
+			"contact_phone": "2163335660",
+			"store_phone": "8122654215",
+			"address": "218 E Main St. Madison, IN 47250",
+			"days": {
+				"monday": "Large Specialty pizza and breadsticks $12",
+				"tuesday": "Buy one sandwhich get one free",
+				"wednesday": "Large Seasonal Tea $2",
+				"thursday": "15% off for Hanover College Students tonight!!",
+				"friday": "$1.50 beer and half price apps",
+				"saturday": "Free cookie with purchase of a sandwhich",
+				"sunday": "$2 well drinks"
+			}
+		}
+	}
+}
+
+
