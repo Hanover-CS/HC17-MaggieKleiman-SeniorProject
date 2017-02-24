@@ -38,6 +38,8 @@ class ThirdViewController: UIViewController {
         let ref = dbref.child("stores").child(name!).child("days").child("monday")
         let mondayValue = monday.text as? NSString
         ref.setValue(mondayValue)
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     
@@ -65,6 +67,7 @@ class ThirdViewController: UIViewController {
         
         //Revert back to home screen on logout
         self.onLogoutClicked()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
