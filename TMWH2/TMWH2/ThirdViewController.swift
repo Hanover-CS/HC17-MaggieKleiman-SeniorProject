@@ -24,6 +24,8 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var wednesday: UITextView!
     @IBOutlet weak var thursday: UITextView!
     @IBOutlet weak var friday: UITextView!
+    @IBOutlet weak var sunday: UITextView!
+    @IBOutlet weak var saturday: UITextView!
     
     //Load the firebase data connection to this view controller
     override func viewWillAppear(_ animated: Bool) {
