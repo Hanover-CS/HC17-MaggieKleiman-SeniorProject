@@ -20,6 +20,10 @@ class RedPepperViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onClickBack(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "specialsScreen"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
 }
 
