@@ -200,11 +200,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         populateSpecials(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepperSpecial)
         
-        populateSpecials(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
+        populateSpecials(store: "8CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
         
         populateSpecials(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendysSpecial)
         
-        populateSpecials(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
+        populateSpecials(store: "oWH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
         
         populateSpecials(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtownerSpecial)
         
@@ -212,7 +212,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         populateSpecials(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproomSpecial)
         
-        populateSpecials(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleysSpecial)
+        populateSpecials(store: "xB41cKqDv9dZvYVxUwKPB34AgOI3", storeLabel: shipleysSpecial)
         
     }
     
