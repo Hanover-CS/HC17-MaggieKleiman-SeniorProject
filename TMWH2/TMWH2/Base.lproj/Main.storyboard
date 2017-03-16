@@ -89,6 +89,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-Xx-snr">
+                                <rect key="frame" x="34" y="599" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -120,6 +125,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-0B-6qn">
+                                <rect key="frame" x="34" y="604" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -232,54 +242,81 @@
                                         <state key="normal" title="The Red Pepperoni">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickRedPepperoni:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Suf-6G-eOd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4p-Yv-B6l">
                                         <rect key="frame" x="17" y="416" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="The Red Pepper"/>
+                                        <connections>
+                                            <action selector="onClickRedPepper:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ant-UY-IKQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q73-Vx-WFO">
                                         <rect key="frame" x="17" y="493" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="The Red Roaster"/>
+                                        <connections>
+                                            <action selector="onClickRedRoaster:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9B8-4R-z0c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSH-qW-Usi">
                                         <rect key="frame" x="17" y="581" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Jendy's Pizzeria"/>
+                                        <connections>
+                                            <action selector="onClickJendys:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="XgJ-I0-P4s"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-di-6ZV">
                                         <rect key="frame" x="17" y="669" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Shooters"/>
+                                        <connections>
+                                            <action selector="onClickShooters:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ce4-2A-zSE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0z-X1-aWb">
                                         <rect key="frame" x="17" y="753" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="The Downtowner"/>
+                                        <connections>
+                                            <action selector="onClickDowntowner:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5XC-wS-juv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cos-1l-EyF">
                                         <rect key="frame" x="17" y="837" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="The Attic"/>
+                                        <connections>
+                                            <action selector="onClickAttic:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="V7v-3j-sax"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFj-b9-llV">
                                         <rect key="frame" x="17" y="922" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="The Taproom"/>
+                                        <connections>
+                                            <action selector="onClickTaproom:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LId-oz-ZvQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-Nf-9Cv">
                                         <rect key="frame" x="17" y="1013" width="178" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Shipley's Tavern"/>
+                                        <connections>
+                                            <action selector="onClickShipleys:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="76L-VZ-ZER"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
@@ -338,6 +375,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9E-qI-FHQ">
+                                <rect key="frame" x="35" y="600" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -369,6 +411,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkU-IX-vzF">
+                                <rect key="frame" x="27" y="604" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -400,6 +447,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-FF-FQ1">
+                                <rect key="frame" x="32" y="605" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -431,6 +483,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyz-mL-0LA">
+                                <rect key="frame" x="31" y="594" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -462,6 +519,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKV-dc-evs">
+                                <rect key="frame" x="28" y="605" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -493,6 +555,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-3P-TX5">
+                                <rect key="frame" x="34" y="601" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -779,6 +846,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-CN-n5A">
+                                <rect key="frame" x="35" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

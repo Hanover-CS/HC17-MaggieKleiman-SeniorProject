@@ -14,35 +14,63 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var myLabel: UILabel!
     
-    @IBOutlet weak var redPepperoni: UILabel!
     @IBOutlet weak var redPepperoniSpecial: UILabel!
-    
-    @IBOutlet weak var redPepper: UILabel!
     @IBOutlet weak var redPepperSpecial: UILabel!
-    
-    @IBOutlet weak var redRoaster: UILabel!
     @IBOutlet weak var redRoasterSpecial: UILabel!
-    
-    @IBOutlet weak var jendys: UILabel!
     @IBOutlet weak var jendysSpecial: UILabel!
-    
-    @IBOutlet weak var shooters: UILabel!
     @IBOutlet weak var shootersSpecial: UILabel!
-
-    @IBOutlet weak var downtowner: UILabel!
     @IBOutlet weak var downtownerSpecial: UILabel!
-    
-    @IBOutlet weak var attic: UILabel!
     @IBOutlet weak var atticSpecial: UILabel!
-    
-    @IBOutlet weak var taproom: UILabel!
     @IBOutlet weak var taproomSpecial: UILabel!
-    
-    @IBOutlet weak var shipleys: UILabel!
     @IBOutlet weak var shipleysSpecial: UILabel!
     
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
+    // Button functionality to bring up restaurants specific page 
+    @IBAction func onClickRedPepperoni(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redPepperoniController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickRedPepper(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redPepperController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickRedRoaster(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redRoasterController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickJendys(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "jendysController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickShooters(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "shootersController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickDowntowner(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "downtownerController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickAttic(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "atticController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickTaproom(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "taproomController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickShipleys(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "shipleysController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -168,31 +196,22 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     override func viewDidAppear(_ animated: Bool) {
         
-        populateName(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoni)
         populateSpecials(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoniSpecial)
         
-        populateName(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepper)
         populateSpecials(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepperSpecial)
         
-        populateName(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoaster)
         populateSpecials(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
         
-        populateName(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendys)
         populateSpecials(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendysSpecial)
         
-        populateName(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shooters)
         populateSpecials(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
         
-        populateName(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtowner)
         populateSpecials(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtownerSpecial)
         
-        populateName(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: attic)
         populateSpecials(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: atticSpecial)
         
-        populateName(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproom)
         populateSpecials(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproomSpecial)
         
-        populateName(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleys)
         populateSpecials(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleysSpecial)
         
     }
