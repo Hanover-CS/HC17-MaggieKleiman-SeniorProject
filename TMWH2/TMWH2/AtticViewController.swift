@@ -24,6 +24,9 @@ class AtticViewController: UIViewController {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "specialsScreen"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
-    
+    @IBAction func makeCall(_ sender: UIButton) {
+        let url = NSURL(string: "tel://8122655781")!
+        UIApplication.shared.openURL(url as URL)
+    }
 }
 

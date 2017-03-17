@@ -94,7 +94,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BACK"/>
                                 <connections>
-                                    <action selector="onClickBack:" destination="rFx-a8-xa1" eventType="touchUpInside" id="qXr-nh-bLn"/>
+                                    <action selector="onClickBack:" destination="rFx-a8-xa1" eventType="touchUpInside" id="Gra-il-cbw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUY-0f-fH8">
+                                <rect key="frame" x="49" y="391" width="82" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95U-iO-fvw">
+                                <rect key="frame" x="119" y="396" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="(812) 265-5781"/>
+                                <connections>
+                                    <action selector="makeCall:" destination="rFx-a8-xa1" eventType="touchUpInside" id="hp1-dw-Odp"/>
                                 </connections>
                             </button>
                         </subviews>
