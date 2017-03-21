@@ -21,10 +21,14 @@ class RedPepperViewController: UIViewController {
     }
     
     @IBAction func onClickBack(_ sender: UIButton) {
-        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "specialsScreen"))! as UIViewController
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func makeCall(_ sender: UIButton) {
+        let url = NSURL(string: "tel://8122653354")!
+        UIApplication.shared.openURL(url as URL)
+    }
 }
 
 
