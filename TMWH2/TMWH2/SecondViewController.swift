@@ -10,7 +10,10 @@ import UIKit
 import Firebase
 
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    // ****************************************************************
+    // Initializing variables that will pull from the firebase database
+    // ****************************************************************
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var myLabel: UILabel!
     
@@ -26,7 +29,10 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
+    // ************************************************************************************
     // Button functionality to bring up restaurants specific page 
+    //  - Upon click of the restaurant, their specific view controller will be instantiated
+    // ************************************************************************************
     @IBAction func onClickRedPepperoni(_ sender: UIButton) {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redPepperoniController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
@@ -72,6 +78,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         self.present(vc, animated: true, completion: nil)
     }
     
+    // ********************************************************************
+    // Set ups the picker and the data for the specials page
+    //  - Sets the intial day to sunday (upon pulling up this page, sundays
+    //    will be initially displayed as default)
+    // ********************************************************************
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -107,7 +118,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         myLabel.text = pickerData[row]
     }
     
-    //Altering the font of my pickerview
+    // **********************************
+    // Altering the font of my pickerview
+    // **********************************
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let pickerLabel = UILabel()
         let titleData = pickerData[row]
@@ -117,7 +130,12 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return pickerLabel
     }
     
-    
+    // ****************************************************************
+    // Populate the Specials from the firebase database 
+    //  - case for each day of the week 
+    //  - the day of the week will be determined from the myLabel value 
+    //    based on what day is selected in the picker
+    // ****************************************************************
     func populateSpecials(store: String, storeLabel: UILabel) {
         let dayOfWeek: String = self.myLabel.text!
         
@@ -183,6 +201,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }
     }
     
+    // ***************************************************************************
+    // Populate the name of the stores from the firebase database
+    // Not currently using after I switched the name labels to buttons
+    // But this is a helpful function so I want to keep it for possible future use
+    // ***************************************************************************
     func populateName(store: String, storeLabel: UILabel) {
         let dbref = FIRDatabase.database().reference()
         let ref = dbref.child("stores").child(store)
@@ -196,6 +219,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     override func viewDidAppear(_ animated: Bool) {
         
+        // ************************************
+        // Populting specials based on store ID 
+        // ************************************
         populateSpecials(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoniSpecial)
         
         populateSpecials(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepperSpecial)
