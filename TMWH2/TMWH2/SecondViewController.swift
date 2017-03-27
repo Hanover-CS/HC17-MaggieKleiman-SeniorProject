@@ -218,6 +218,10 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     }
     
+    // *********************************************
+    // function to reload the page when a new day is
+    // selected in the picker
+    // *********************************************
     override func viewWillAppear(_ animated: Bool) {
         self.viewDidLoad()
         self.viewDidAppear(true)
