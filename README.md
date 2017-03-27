@@ -11,8 +11,20 @@ Maggie Kleiman Senior Project Repository
 
 
 ### Prerequisites
+##### A Mac computer with Xcode 7.1 or later installed
+##### An Apple ID
 ##### Make sure to have the latest version of Xcode downloaded onto your computer.
 https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
+##### In case you are not familiar with iOS, Swift or Xcode, I recommend taking a look at the available documentation at Apple's website. This can be a good starting point. https://developer.apple.com/develop/
+
+### Installation
+##### To download the specific hc07-WateringHole project from my repository
+##### Install cocoapods with command: $ sudo gem install cocoapods
+
+##### 1.) Go to Window >> Welcome to xCode
+##### 2.) Click on the **Check out an existing project** button on the left hand side.
+##### 3.) Then enter the details for the repository you want to access.
+##### 4.) 
 
 
 ### Contact Information:
