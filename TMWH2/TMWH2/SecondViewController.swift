@@ -90,7 +90,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         myPicker.dataSource = self
         myPicker.delegate = self
         
-        myLabel.text = "Sunday"
+        //git myLabel.text = "Sunday"
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,6 +116,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         myLabel.text = pickerData[row]
+        viewWillAppear(true)
     }
     
     // **********************************
@@ -215,6 +216,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                 storeLabel.text = snapshotValue?["name"] as? String
         })
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewDidLoad()
+        self.viewDidAppear(true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
