@@ -30,11 +30,14 @@ https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
     Choose Add Apple ID from the pop-up menu.
 
 #### To download the specific hc07-WateringHole project from my repository
-##### 1.) Go to Window >> Welcome to xCode
-##### 2.) Click on the **Check out an existing project** button on the left hand side.
-##### 3.) Then enter the details for the repository you want to access.
 
-##### After installing the designated repository, you can run the application either from an iOS device or the Xcode simmulator. 
+    Go to Window >> Welcome to xCode
+    
+    Click on the **Check out an existing project** button on the left hand side.
+    
+    Then enter the details for the repository you want to access.
+
+    ***After installing the designated repository, you can run the application either from an iOS device or the Xcode simmulator. 
 
 
 ### Contact Information:
