@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // recognizer to bring up keyboard with finger tap
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
@@ -36,6 +37,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // ************************************************
+    // function to log in specific user upon successful
+    // email and password combination
+    // shows error alert message if incorrect login
+    // ************************************************
     @IBAction func loginClicked(_ sender: AnyObject) {
         
         if (!CheckInput()) {
@@ -56,25 +62,21 @@ class LoginViewController: UIViewController {
         })
     }
     
+    // ***********************************************
+    // upon successful login, this function brings the
+    // user back to the homepage
+    // ***********************************************
     func onClickLogin() {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
     
-    @IBAction func forgotClicked(_ sender: AnyObject) {
-        if (!emailTextField.text!.isEmpty) {
-            let email = self.emailTextField.text
-            
-            FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: { (error) in
-                if let error = error {
-                    Utilities().ShowAlert(title: "Error", message: error.localizedDescription, vc: self)
-                    return
-                }
-                Utilities().ShowAlert(title: "Success!", message: "Please check your email!", vc: self)
-            })
-        }
-    }
-    
+    // ******************************************************
+    // Function to check the password and username validity
+    // If the email or password is invalid, the corresponding
+    // text field will turn red to alert the user of their 
+    // invalid information
+    // ******************************************************
     func CheckInput () -> Bool {
         if ((emailTextField.text?.characters.count)! < 5)
         {
