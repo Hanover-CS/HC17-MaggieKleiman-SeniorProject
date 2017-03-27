@@ -1,4 +1,4 @@
-# hc07-WateringHole
+## hc07-WateringHole
 Maggie Kleiman Senior Project Repository
 
 Contact Information:
