@@ -27,7 +27,7 @@ Maggie Kleiman Senior Project Repository
 ##### Install cocoapods with command: 
     $ sudo gem install cocoapods
     
-#### To add an Apple ID to Xcode
+#### To add an Apple ID to Xcode:
 
     Choose Xcode > Preferences.
 
@@ -36,16 +36,30 @@ Maggie Kleiman Senior Project Repository
     In the lower-left corner, click the Add button (+) .
 
     Choose Add Apple ID from the pop-up menu.
+    
+    In the dialog that appears, enter your Apple ID and password, and click Sign In.
+    
+    If you don’t have an Apple ID, click Create Apple ID in the lower-left corner of the dialog. After you create an Apple ID, perform these steps again to add your Apple ID to Xcode.
 
-#### To download the specific hc07-WateringHole project from my repository
+#### To download the specific hc07-WateringHole project from my repository:
 
     Go to Window >> Welcome to xCode
     
     Click on the **Check out an existing project** button on the left hand side.
     
-    Then enter the details for the repository you want to access.
+    Then enter the details for the repository you want to access
+    
+#### To launch your app on a connected device:
 
-    ***After installing the designated repository, you can run the application either from an iOS device or the Xcode simmulator. 
+    Connect the device to your Mac.
+
+    In the project navigator, choose your device from the destination Scheme pop-up menu.
+    
+    Click the Run button. Xcode installs the app on the device before launching the app.
+    
+    If a “No matching provisioning profile found” warning message appears under the Team pop-up menu, click the Fix Issue button.
+
+    If you connect a device that isn’t in the team provisioning profile, Xcode needs to add it to the team provisioning profile before it       can launch the app on the device
 
 
 ### Contact Information:
