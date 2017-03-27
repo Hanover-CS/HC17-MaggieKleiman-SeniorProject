@@ -11,13 +11,13 @@ Maggie Kleiman Senior Project Repository
 
 ### Prerequisites
 
-##### A Mac computer with Xcode 7.1 or later installed
+    A Mac computer with Xcode 7.1 or later installed
     
-##### An Apple ID
+    An Apple ID
     
-Make sure to have the latest version of Xcode downloaded onto your computer.
+    Make sure to have the latest version of Xcode downloaded onto your computer.
     
-https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
+Link to download latest version of Xcode: https://developer.apple.com/xcode/ 
     
 In case you are not familiar with iOS, Swift or Xcode, I recommend taking a look at the available documentation at Apple's website. 
     
