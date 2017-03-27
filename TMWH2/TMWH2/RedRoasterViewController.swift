@@ -37,6 +37,15 @@ class RedRoasterViewController: UIViewController {
         UIApplication.shared.openURL(url as URL)
 
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "https://www.facebook.com/redroastercafe/?fref=ts") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 

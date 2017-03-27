@@ -36,5 +36,14 @@ class ShootersViewController: UIViewController {
         let url = NSURL(string: "tel://8122653841")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "https://www.facebook.com/shootersmadison/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 

@@ -36,6 +36,15 @@ class TaproomViewController: UIViewController {
         let url = NSURL(string: "tel://8122740216")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "https://www.facebook.com/Off-Broadway-Taproom-487367701404987/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 

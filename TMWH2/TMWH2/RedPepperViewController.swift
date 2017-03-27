@@ -36,6 +36,15 @@ class RedPepperViewController: UIViewController {
         let url = NSURL(string: "tel://8122653354")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "http://www.theredpepperdeli.com/home") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 

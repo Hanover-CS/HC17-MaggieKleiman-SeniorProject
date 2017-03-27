@@ -36,6 +36,15 @@ class DowntownerViewController: UIViewController {
         let url = NSURL(string: "tel://8122654343")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "https://www.facebook.com/thedowntownermadison/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 

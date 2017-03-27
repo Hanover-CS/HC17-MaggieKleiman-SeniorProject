@@ -36,6 +36,15 @@ class JendysViewController: UIViewController {
         let url = NSURL(string: "tel://8128668578")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "http://www.jendyspizza.com/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
 

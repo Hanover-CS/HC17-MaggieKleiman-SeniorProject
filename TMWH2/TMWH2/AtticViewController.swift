@@ -36,5 +36,14 @@ class AtticViewController: UIViewController {
         let url = NSURL(string: "tel://8122655781")!
         UIApplication.shared.openURL(url as URL)
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "https://www.atticmadison.com/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 

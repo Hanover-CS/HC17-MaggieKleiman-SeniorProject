@@ -35,8 +35,17 @@ class RedPepperoniViewController: UIViewController {
     @IBAction func makeCall(_ sender: UIButton) {
         let url = NSURL(string: "tel://8122740111")!
         UIApplication.shared.openURL(url as URL)
-
     }
+    
+    // ****************************************
+    // function to bring up restaurants webpage
+    // ****************************************
+    @IBAction func instantiateWebsite(_ sender: UIButton) {
+        if let url = URL(string: "http://www.theredpepperoni.com/home") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
 }
 
 
