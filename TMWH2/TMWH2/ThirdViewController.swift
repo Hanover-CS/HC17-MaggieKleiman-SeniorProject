@@ -12,9 +12,10 @@ import FirebaseAuth
 
 class ThirdViewController: UIViewController {
     
-    
+    // ************************************
     // Declare the text fields for each day
     // Declare the merchant name label
+    // ************************************
     @IBOutlet weak var testLabel: UILabel!
     
     @IBOutlet weak var merchantName: UILabel!
@@ -43,9 +44,31 @@ class ThirdViewController: UIViewController {
     @IBAction func updateClicked(_ sender: Any) {
         let name = FIRAuth.auth()?.currentUser?.uid
         let dbref = FIRDatabase.database().reference()
-        let ref = dbref.child("stores").child(name!).child("days").child("monday")
+        
+        let refMon = dbref.child("stores").child(name!).child("days").child("monday")
+        let refTues = dbref.child("stores").child(name!).child("days").child("tuesday")
+        let refWed = dbref.child("stores").child(name!).child("days").child("wednesday")
+        let refThurs = dbref.child("stores").child(name!).child("days").child("thursday")
+        let refFri = dbref.child("stores").child(name!).child("days").child("friday")
+        let refSat = dbref.child("stores").child(name!).child("days").child("saturday")
+        let refSun = dbref.child("stores").child(name!).child("days").child("sunday")
+        
         let mondayValue = monday.text as? NSString
-        ref.setValue(mondayValue)
+        let tuesdayValue = tuesday.text as? NSString
+        let wednesdayValue = wednesday.text as? NSString
+        let thursdayValue = thursday.text as? NSString
+        let fridayValue = friday.text as? NSString
+        let saturdayValue = saturday.text as? NSString
+        let sundayValue = sunday.text as? NSString
+        
+        refMon.setValue(mondayValue)
+        refTues.setValue(tuesdayValue)
+        refWed.setValue(wednesdayValue)
+        refThurs.setValue(thursdayValue)
+        refFri.setValue(fridayValue)
+        refSat.setValue(saturdayValue)
+        refSun.setValue(sundayValue)
+        
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
