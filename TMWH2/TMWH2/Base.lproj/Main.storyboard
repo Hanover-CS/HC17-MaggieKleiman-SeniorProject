@@ -1153,6 +1153,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q27-Pn-7Iv">
+                                <rect key="frame" x="52" y="571" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackClick:" destination="dkT-22-3zl" eventType="touchUpInside" id="pUv-aO-dv8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93977012429999995" green="0.92021757000000004" blue="0.71790325430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
