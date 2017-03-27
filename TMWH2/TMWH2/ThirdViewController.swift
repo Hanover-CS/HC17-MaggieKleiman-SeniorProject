@@ -28,7 +28,9 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var sunday: UITextView!
     @IBOutlet weak var saturday: UITextView!
     
-    //Load the firebase data connection to this view controller
+    // ********************************************************
+    // Load the firebase data connection to this view controller
+    // ********************************************************
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
@@ -38,9 +40,11 @@ class ThirdViewController: UIViewController {
         }
     }
     
+    // ****************************************************
     // Declare the update button
     // Updates the inforation in the firebase database
     // Brings user main to main screen upon clicking update
+    // ****************************************************
     @IBAction func updateClicked(_ sender: Any) {
         let name = FIRAuth.auth()?.currentUser?.uid
         let dbref = FIRDatabase.database().reference()
@@ -74,7 +78,9 @@ class ThirdViewController: UIViewController {
     }
     
     
+    // **********************************************
     // Populate label with name of merchant logged in
+    // **********************************************
     func populateName() {
         let name = FIRAuth.auth()?.currentUser?.uid
         merchantName.text = name
@@ -87,9 +93,11 @@ class ThirdViewController: UIViewController {
         })
     }
     
+    // ********************************************************
     // Declare the logout button
     // Logs the current user out of the application
     // Calls onLogoutClicked() to take user back to home screen
+    // ********************************************************
     @IBAction func logoutClicked(_ sender: Any) {
         //logout
         let firebaseAuth = FIRAuth.auth()
@@ -104,12 +112,16 @@ class ThirdViewController: UIViewController {
         
     }
     
+    // ****************
     // Instantiate View
+    // ****************
     override func viewDidAppear(_ animated: Bool) {
         populateName()
     }
     
+    // *************************************
     // Instantiates the main view controller
+    // *************************************
     func onLogoutClicked() {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
         self.present(vc, animated: true, completion: nil)
@@ -125,8 +137,10 @@ class ThirdViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    // *******************************************
     // function to dismiss the keyboard
     // with tap on screen after done entering text
+    // *******************************************
     func dismissKeyboard() {
         view.endEditing(true)
     }
