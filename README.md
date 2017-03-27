@@ -18,13 +18,23 @@ https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
 ##### In case you are not familiar with iOS, Swift or Xcode, I recommend taking a look at the available documentation at Apple's website. This can be a good starting point. https://developer.apple.com/develop/
 
 ### Installation
-##### To download the specific hc07-WateringHole project from my repository
-##### Install cocoapods with command: $ sudo gem install cocoapods
+##### 0.) Install cocoapods with command: $ sudo gem install cocoapods
+#### To add an Apple ID to Xcode
 
+    Choose Xcode > Preferences.
+
+    At the top of the window, click Accounts.
+
+    In the lower-left corner, click the Add button (+) .
+
+    Choose Add Apple ID from the pop-up menu.
+
+#### To download the specific hc07-WateringHole project from my repository
 ##### 1.) Go to Window >> Welcome to xCode
 ##### 2.) Click on the **Check out an existing project** button on the left hand side.
 ##### 3.) Then enter the details for the repository you want to access.
-##### 4.) 
+
+##### After installing the designated repository, you can run the application either from an iOS device or the Xcode simmulator. 
 
 
 ### Contact Information:
