@@ -99,7 +99,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func onBackClick(_ sender: UIButton) {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "tabBarController"))! as UIViewController
-        self.present(vc, animated: true, completion: nil)git 
+        self.present(vc, animated: true, completion: nil)
     }
     
     // MARK: - Navigation
