@@ -59,7 +59,8 @@ Maggie Kleiman Senior Project Repository
     
     If a “No matching provisioning profile found” warning message appears under the Team pop-up menu, click the Fix Issue button.
 
-    If you connect a device that isn’t in the team provisioning profile, Xcode needs to add it to the team provisioning profile before it       can launch the app on the device
+    If you connect a device that isn’t in the team provisioning profile, Xcode needs to add it to the team provisioning profile before it               
+    can launch the app on the device
 
 
 ### Contact Information:
