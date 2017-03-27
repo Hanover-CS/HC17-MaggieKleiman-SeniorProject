@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ShipleysViewController: UIViewController {
     
@@ -44,6 +45,22 @@ class ShipleysViewController: UIViewController {
         if let url = URL(string: "https://www.facebook.com/Shipleys-Tavern-200491190386/") {
             UIApplication.shared.open(url, options: [:])
         }
+    }
+    
+    // ******************************************
+    // Function to open up apple maps
+    // and give directions to restaurant location
+    // ******************************************
+    @IBAction func openMaps(_ sender: UIButton) {
+        let coordinate = CLLocationCoordinate2DMake(38.7359, -85.3800)
+        let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.01, 0.02))
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: region.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: region.span)]
+        mapItem.name = "Shipley's Tavern"
+        mapItem.openInMaps(launchOptions: options)
     }
 }
 

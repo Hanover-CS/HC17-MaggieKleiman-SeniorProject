@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RedPepperViewController: UIViewController {
     
@@ -44,6 +45,22 @@ class RedPepperViewController: UIViewController {
         if let url = URL(string: "http://www.theredpepperdeli.com/home") {
             UIApplication.shared.open(url, options: [:])
         }
+    }
+    
+    // ******************************************
+    // Function to open up apple maps
+    // and give directions to restaurant location
+    // ******************************************
+    @IBAction func openMaps(_ sender: UIButton) {
+        let coordinate = CLLocationCoordinate2DMake(38.7391, -85.3932)
+        let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.01, 0.02))
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: region.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: region.span)]
+        mapItem.name = "Red Pepper Deli Cafe"
+        mapItem.openInMaps(launchOptions: options)
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RedPepperoniViewController: UIViewController {
     
@@ -46,6 +47,21 @@ class RedPepperoniViewController: UIViewController {
         }
     }
     
+    // ******************************************
+    // Function to open up apple maps
+    // and give directions to restaurant location
+    // ******************************************
+    @IBAction func openMaps(_ sender: UIButton) {
+        let coordinate = CLLocationCoordinate2DMake(38.7390, -85.3927)
+        let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.01, 0.02))
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: region.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: region.span)]
+        mapItem.name = "The Red Pepperoni"
+        mapItem.openInMaps(launchOptions: options)
+    }
 }
 
 
