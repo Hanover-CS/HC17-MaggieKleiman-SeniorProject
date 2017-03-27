@@ -9,16 +9,24 @@ Maggie Kleiman Senior Project Repository
 ### Getting Started
 ##### These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-
 ### Prerequisites
-##### A Mac computer with Xcode 7.1 or later installed
-##### An Apple ID
-##### Make sure to have the latest version of Xcode downloaded onto your computer.
-https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
-##### In case you are not familiar with iOS, Swift or Xcode, I recommend taking a look at the available documentation at Apple's website. This can be a good starting point. https://developer.apple.com/develop/
+
+    A Mac computer with Xcode 7.1 or later installed
+    
+    An Apple ID
+    
+    Make sure to have the latest version of Xcode downloaded onto your computer.
+    
+    https://developer.apple.com/xcode/ "Link to download latest version of Xcode"
+    
+    ***In case you are not familiar with iOS, Swift or Xcode, I recommend taking a look at the available documentation at Apple's website. 
+    
+    This can be a good starting point. https://developer.apple.com/develop/
 
 ### Installation
-##### 0.) Install cocoapods with command: $ sudo gem install cocoapods
+##### Install cocoapods with command: 
+    $ sudo gem install cocoapods
+    
 #### To add an Apple ID to Xcode
 
     Choose Xcode > Preferences.
