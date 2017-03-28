@@ -10,40 +10,79 @@ import UIKit
 import Firebase
 
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    // ****************************************************************
+    // Initializing variables that will pull from the firebase database
+    // ****************************************************************
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var myLabel: UILabel!
     
-    @IBOutlet weak var redPepperoni: UILabel!
     @IBOutlet weak var redPepperoniSpecial: UILabel!
-    
-    @IBOutlet weak var redPepper: UILabel!
     @IBOutlet weak var redPepperSpecial: UILabel!
-    
-    @IBOutlet weak var redRoaster: UILabel!
     @IBOutlet weak var redRoasterSpecial: UILabel!
-    
-    @IBOutlet weak var jendys: UILabel!
     @IBOutlet weak var jendysSpecial: UILabel!
-    
-    @IBOutlet weak var shooters: UILabel!
     @IBOutlet weak var shootersSpecial: UILabel!
-
-    @IBOutlet weak var downtowner: UILabel!
     @IBOutlet weak var downtownerSpecial: UILabel!
-    
-    @IBOutlet weak var attic: UILabel!
     @IBOutlet weak var atticSpecial: UILabel!
-    
-    @IBOutlet weak var taproom: UILabel!
     @IBOutlet weak var taproomSpecial: UILabel!
-    
-    @IBOutlet weak var shipleys: UILabel!
     @IBOutlet weak var shipleysSpecial: UILabel!
     
     let pickerData = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
+    // ************************************************************************************
+    // Button functionality to bring up restaurants specific page 
+    //  - Upon click of the restaurant, their specific view controller will be instantiated
+    // ************************************************************************************
+    @IBAction func onClickRedPepperoni(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redPepperoniController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
+    @IBAction func onClickRedPepper(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redPepperController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickRedRoaster(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "redRoasterController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickJendys(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "jendysController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickShooters(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "shootersController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickDowntowner(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "downtownerController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickAttic(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "atticController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickTaproom(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "taproomController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickShipleys(_ sender: UIButton) {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "shipleysController"))! as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    // ********************************************************************
+    // Set ups the picker and the data for the specials page
+    //  - Sets the intial day to sunday (upon pulling up this page, sundays
+    //    will be initially displayed as default)
+    // ********************************************************************
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,7 +90,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         myPicker.dataSource = self
         myPicker.delegate = self
         
-        myLabel.text = "Sunday"
+        //git myLabel.text = "Sunday"
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,9 +116,12 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         myLabel.text = pickerData[row]
+        viewWillAppear(true)
     }
     
-    //Altering the font of my pickerview
+    // **********************************
+    // Altering the font of my pickerview
+    // **********************************
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let pickerLabel = UILabel()
         let titleData = pickerData[row]
@@ -89,7 +131,12 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return pickerLabel
     }
     
-    
+    // ****************************************************************
+    // Populate the Specials from the firebase database 
+    //  - case for each day of the week 
+    //  - the day of the week will be determined from the myLabel value 
+    //    based on what day is selected in the picker
+    // ****************************************************************
     func populateSpecials(store: String, storeLabel: UILabel) {
         let dayOfWeek: String = self.myLabel.text!
         
@@ -155,6 +202,11 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }
     }
     
+    // ***************************************************************************
+    // Populate the name of the stores from the firebase database
+    // Not currently using after I switched the name labels to buttons
+    // But this is a helpful function so I want to keep it for possible future use
+    // ***************************************************************************
     func populateName(store: String, storeLabel: UILabel) {
         let dbref = FIRDatabase.database().reference()
         let ref = dbref.child("stores").child(store)
@@ -166,34 +218,37 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     }
     
+    // *********************************************
+    // function to reload the page when a new day is
+    // selected in the picker
+    // *********************************************
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewDidLoad()
+        self.viewDidAppear(true)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         
-        populateName(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoni)
+        // ************************************
+        // Populting specials based on store ID 
+        // ************************************
         populateSpecials(store: "d0VHcDyzDjSzFv1MtdSDUFakoaq1", storeLabel: redPepperoniSpecial)
         
-        populateName(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepper)
         populateSpecials(store: "FWOjbbNYRmT78Y5SqhFLEiyV06G2", storeLabel: redPepperSpecial)
         
-        populateName(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoaster)
-        populateSpecials(store: "CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
+        populateSpecials(store: "8CFh2lafUyb0x00liB6FZHvLbDs1", storeLabel: redRoasterSpecial)
         
-        populateName(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendys)
         populateSpecials(store: "R7OUYuAkl9Xv5UDrrudKniDJIxD2", storeLabel: jendysSpecial)
         
-        populateName(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shooters)
-        populateSpecials(store: "WH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
+        populateSpecials(store: "oWH6ecCfK8aUJAGBBt3zBCUabQl2", storeLabel: shootersSpecial)
         
-        populateName(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtowner)
         populateSpecials(store: "QUzrBGxOakUDn25PwDoubxZFax03", storeLabel: downtownerSpecial)
         
-        populateName(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: attic)
         populateSpecials(store: "dmj5b8ljkqZul3UgZ6fyHpYOfkc2", storeLabel: atticSpecial)
         
-        populateName(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproom)
         populateSpecials(store: "WR4KxIszohOE1g7YKx8JFUL9XNh2", storeLabel: taproomSpecial)
         
-        populateName(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleys)
-        populateSpecials(store: "KzC5S18swhcjgzGPFu0yng1az9s1", storeLabel: shipleysSpecial)
+        populateSpecials(store: "xB41cKqDv9dZvYVxUwKPB34AgOI3", storeLabel: shipleysSpecial)
         
     }
     
